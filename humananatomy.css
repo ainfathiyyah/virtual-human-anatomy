@@ -362,38 +362,151 @@ body{
         font-size:14px;
     }
 
+    .anatomy-banner{
+        padding:80px 20px;
+    }
+
     .anatomy-banner h1{
-        font-size:38px;
+        font-size:36px;
+        line-height:1.3;
     }
 
     .anatomy-banner p{
-        font-size:16px;
+        font-size:15px;
+        line-height:1.7;
     }
+
+    /* SYSTEM SECTION */
 
     .system-section,
     .reverse{
+
         flex-direction:column;
-        text-align:center;
+
+        padding:30px 20px;
+
+        gap:25px;
+
+        text-align:left;
+    }
+
+    /* GAMBAR DUDUK ATAS */
+
+    .system-image{
+        order:-1;
+    }
+
+    .system-image img{
+
+        width:220px;
+
+        max-width:100%;
+
+        height:auto;
+
+        margin:auto;
+
+        display:block;
+    }
+
+    .system-content{
+        width:100%;
     }
 
     .system-content h2{
+
         font-size:32px;
+
+        text-align:left;
     }
+
+    .system-content h2::after{
+
+        margin-top:12px;
+    }
+
+    .system-content p{
+
+        font-size:16px;
+
+        line-height:1.8;
+
+        text-align:left;
+    }
+
+    .system-content h3{
+
+        text-align:left;
+
+        font-size:24px;
+    }
+
+    .system-content ul{
+
+        padding-left:20px;
+
+        text-align:left;
+    }
+
+    .system-content li{
+
+        text-align:left;
+
+        line-height:1.9;
+
+        font-size:15px;
+    }
+
+    /* CARD */
 
     .nav-card,
     .benefit-card{
+
         width:100%;
+
         max-width:320px;
     }
 
+    .benefits h2,
+    .quiz-section h2{
+
+        font-size:32px;
+    }
+
+    .benefit-card p{
+
+        font-size:15px;
+    }
+
+    /* QUIZ */
+
+    .quiz-section{
+
+        padding:30px 20px;
+    }
+
+    .quiz-section p{
+
+        font-size:15px;
+
+        line-height:1.8;
+    }
+
+    /* FOOTER */
+
     .footer{
+
         flex-direction:column;
+
         gap:15px;
+
         text-align:center;
     }
 
     .footer-right{
+
         justify-content:center;
+
         flex-wrap:wrap;
     }
 }
