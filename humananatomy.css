@@ -24,11 +24,12 @@ body{
 
 .top-header{
     background:#102c54;
-    height:85px;
+    min-height:85px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 50px;
+    padding:0 30px;
+    flex-wrap:wrap;
 }
 
 .logo{
