@@ -380,21 +380,13 @@ font-size:24px;
 
 .footer{
 background:#102c54;
-
-```
 padding:25px 50px;
-
 margin-top:80px;
 
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
 flex-wrap:wrap;
-```
-
 }
 
 .footer-left p{
@@ -413,8 +405,9 @@ text-decoration:none;
 transition:0.3s;
 }
 
-.footer-right a:hover
-
+.footer-right a:hover{
+    color:#ff4d4d;
+}
 /* MOBILE */
 
 @media screen and (max-width:768px){
@@ -526,6 +519,5 @@ transition:0.3s;
     justify-content:center;
     flex-wrap:wrap;
 }
-```
 
 }
