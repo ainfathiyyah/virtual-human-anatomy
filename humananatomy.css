@@ -355,20 +355,17 @@ body{
         margin-bottom:15px;
     }
 
-       .navbar{
-        display:flex;
-        flex-wrap:nowrap;
-        overflow-x:auto;
-        gap:15px;
-        width:100%;
-        justify-content:flex-start;
-        padding:0 10px;
-    }
+  .navbar{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
 
-    .navbar a{
-        white-space:nowrap;
-        font-size:14px;
-    }
+.navbar a{
+    font-size:13px;
+    padding:4px 6px;
+}
 
     .anatomy-banner{
         padding:80px 20px;
