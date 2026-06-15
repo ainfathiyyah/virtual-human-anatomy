@@ -1,0 +1,644 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#edf2fc;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* HEADER */
+
+.top-header{
+    background:#102c54;
+    height:85px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 50px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.logo span{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.navbar{
+    display:flex;
+    gap:30px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#ff4d4d;
+}
+
+.navbar a.active{
+    color:#ff4d4d;
+}
+
+/* BANNER */
+
+.gallery-banner{
+
+    padding:100px 20px;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+        rgba(16,44,84,0.85),
+        rgba(214,40,40,0.65)
+    ),
+    url("images/hero1.png");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.gallery-banner h1{
+    color:white;
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.gallery-banner p{
+    color:white;
+    font-size:22px;
+}
+
+/* SECTION */
+
+.gallery-section{
+
+    width:90%;
+
+    margin:100px auto;
+
+    text-align:center;
+}
+
+.gallery-section h2{
+
+    color:#143b6d;
+
+    font-size:42px;
+
+    margin-bottom:50px;
+}
+
+.gallery-section h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:80px;
+
+    height:4px;
+
+    background:#d62828;
+
+    margin:15px auto;
+
+    border-radius:20px;
+}
+
+/* VR SCREENSHOTS */
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+}
+
+.gallery-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    border-top:5px solid #1e5eff;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.gallery-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.gallery-card img{
+
+    width:calc(100% - 30px);
+
+    height:220px;
+
+    object-fit:cover;
+
+    margin:15px;
+
+    border:2px solid #dfe6f3;
+
+    border-radius:10px;
+
+    display:block;
+}
+
+/* INFOGRAPHIC */
+
+.infographic-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,350px);
+
+    justify-content:center;
+
+    gap:40px;
+}
+
+.infographic-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    max-width:400px;
+
+  
+
+    border-top:5px solid #1e5eff;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.infographic-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.infographic-card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:15px;
+
+    
+}
+
+.gallery-note{
+
+    text-align:center;
+
+    color:#555;
+
+    font-size:17px;
+
+    margin-top:-20px;
+
+    margin-bottom:40px;
+
+    line-height:1.2;
+}
+
+.card-content{
+
+    padding:10px;
+
+    text-align:left;
+
+    text-align:center;
+}
+
+.card-content h3{
+
+    color:#143b6d;
+
+    margin-bottom:15px;
+}
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    z-index:9999;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.9);
+
+    justify-content:center;
+    align-items:center;
+}
+
+#modalImage{
+
+    max-width:90%;
+    max-height:90%;
+
+    border-radius:15px;
+}
+
+.close-btn{
+
+    position:absolute;
+
+    top:20px;
+    right:40px;
+
+    color:white;
+
+    font-size:50px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+}
+/* STICKERS */
+
+.sticker-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+.sticker-card{
+
+    width:350px;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    border-top:5px solid #1e5eff;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+
+    text-align:center;
+}
+
+.sticker-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.sticker-card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:15px;
+}
+
+/* DOWNLOAD BUTTON */
+
+.download-btn{
+
+    display:inline-block;
+
+    margin:20px;
+
+    padding:12px 25px;
+
+    background:#1e5eff;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.download-btn:hover{
+
+    background:#d62828;
+}
+
+/* FOOTER */
+
+.footer{
+
+    background:#102c54;
+
+    padding:25px 50px;
+
+    margin-top:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+}
+
+.footer-left p{
+
+    color:white;
+}
+
+.footer-right{
+
+    display:flex;
+
+    gap:25px;
+}
+
+.footer-right a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.footer-right a:hover{
+
+    color:#ff4d4d;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width:768px){
+
+    /* HEADER */
+
+    .top-header{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:15px;
+    }
+
+    .logo{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:8px;
+
+        margin-bottom:15px;
+    }
+
+    .logo img{
+
+        width:50px;
+        height:50px;
+    }
+
+    .logo span{
+
+        font-size:16px;
+    }
+
+    .navbar{
+
+        width:100%;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:10px;
+    }
+
+    .navbar a{
+
+        font-size:13px;
+    }
+
+    /* BANNER */
+
+    .gallery-banner{
+
+        padding:70px 20px;
+    }
+
+    .gallery-banner h1{
+
+        font-size:34px;
+    }
+
+    .gallery-banner p{
+
+        font-size:15px;
+
+        line-height:1.6;
+    }
+
+    /* SECTION */
+
+    .gallery-section{
+
+        width:95%;
+
+        margin:60px auto;
+    }
+
+    .gallery-section h2{
+
+        font-size:28px;
+
+        margin-bottom:30px;
+    }
+
+    .gallery-note{
+
+        font-size:14px;
+
+        margin-bottom:30px;
+    }
+
+    /* VR SCREENSHOTS */
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+    }
+
+    .gallery-card img{
+
+        height:200px;
+    }
+
+    /* INFOGRAPHICS */
+
+    .infographic-grid{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+    }
+
+    .infographic-card{
+
+        width:100%;
+
+        max-width:330px;
+
+        margin:auto;
+    }
+
+    .infographic-card img{
+
+        height:220px;
+
+        padding:10px;
+    }
+
+    /* STICKERS */
+
+    .sticker-grid{
+
+        gap:25px;
+    }
+
+    .sticker-card{
+
+        width:100%;
+
+        max-width:330px;
+
+        margin:auto;
+    }
+
+    .sticker-card img{
+
+        height:220px;
+    }
+
+    /* DOWNLOAD BUTTON */
+
+    .download-btn{
+
+        margin:15px;
+
+        padding:10px 20px;
+
+        font-size:14px;
+    }
+
+    /* MODAL */
+
+    #modalImage{
+
+        max-width:95%;
+
+        max-height:85%;
+    }
+
+    .close-btn{
+
+        top:15px;
+
+        right:20px;
+
+        font-size:40px;
+    }
+
+    /* FOOTER */
+
+    .footer{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:15px;
+
+        padding:20px;
+    }
+
+    .footer-left p{
+
+        font-size:14px;
+    }
+
+    .footer-right{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:15px;
+    }
+
+}
