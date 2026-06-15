@@ -355,13 +355,18 @@ body{
         margin-bottom:15px;
     }
 
-    .navbar{
-        flex-wrap:wrap;
-        justify-content:center;
+       .navbar{
+        display:flex;
+        flex-wrap:nowrap;
+        overflow-x:auto;
         gap:15px;
+        width:100%;
+        justify-content:flex-start;
+        padding:0 10px;
     }
 
     .navbar a{
+        white-space:nowrap;
         font-size:14px;
     }
 
