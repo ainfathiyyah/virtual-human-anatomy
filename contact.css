@@ -548,6 +548,38 @@ body{
         font-size:22px;
     }
 
+    /* USER EVALUATION */
+
+.evaluation-card{
+
+    text-align:center;
+}
+
+.evaluation-card h3{
+
+    color:#143b6d;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+}
+
+.evaluation-card p{
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:15px;
+}
+
+.evaluation-card .contact-links{
+
+    justify-content:center;
+}
+
     /* FOOTER */
 
     .footer{
