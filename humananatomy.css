@@ -309,9 +309,12 @@ body{
     }
 
     .logo{
-        display:flex;
-        align-items:center;
-        gap:10px;
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:8px;
+
         margin-bottom:15px;
     }
 
@@ -321,21 +324,24 @@ body{
     }
 
     .logo span{
-    font-size:18px;
-}
+    font-size:16px;
+    }
 
 
   .navbar{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:10px;
+        width:100%;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:10px;
 }
 
-.navbar a{
-    font-size:13px;
-    padding:4px 6px;
-}
+  .navbar a{
+
+        font-size:13px;
+    }
 
     .anatomy-banner{
         padding:80px 20px;
