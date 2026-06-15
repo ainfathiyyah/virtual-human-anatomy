@@ -1,0 +1,578 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#edf2fc;
+}
+
+/* HEADER */
+
+.top-header{
+    background:#102c54;
+    height:85px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 50px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.logo span{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.navbar{
+    display:flex;
+    gap:30px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#ff4d4d;
+}
+
+.navbar a.active{
+    color:#ff4d4d;
+}
+
+/* BANNER */
+
+.contact-banner{
+
+    padding:100px 20px;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+    rgba(16,44,84,0.85),
+    rgba(214,40,40,0.65)
+    ),
+    url("images/hero1.png");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.contact-banner h1{
+
+    color:white;
+
+    font-size:60px;
+
+    margin-bottom:20px;
+}
+
+.contact-banner p{
+
+    color:white;
+
+    font-size:22px;
+}
+
+/* SECTION */
+
+.contact-section{
+
+    width:90%;
+
+    margin:80px auto;
+}
+
+.contact-section h2{
+
+    text-align:center;
+
+    color:#143b6d;
+
+    font-size:42px;
+
+    margin-bottom:50px;
+}
+
+.contact-section h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:80px;
+
+    height:4px;
+
+    background:#d62828;
+
+    margin:15px auto;
+
+    border-radius:20px;
+}
+
+/* PROFILE CARD */
+
+.profile-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+    border-top:5px solid #2d63ff;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.profile-image img{
+
+    width:250px;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+}
+
+.profile-info{
+
+    flex:1;
+}
+
+.profile-info h3{
+
+    color:#143b6d;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+}
+
+.profile-info p{
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:10px;
+}
+
+/* CONTACT BUTTONS */
+
+.contact-links{
+
+    margin-top:25px;
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
+.contact-links a{
+
+    background:#2d63ff;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 25px;
+
+    border-radius:10px;
+
+    transition:0.3s;
+}
+
+.contact-links a:hover{
+
+    background:#d62828;
+}
+
+/* LECTURER SECTION */
+
+.lecturer-section{
+
+    width:90%;
+
+    margin:80px auto;
+}
+
+.lecturer-section h2{
+
+    text-align:center;
+
+    color:#143b6d;
+
+    font-size:42px;
+
+    margin-bottom:50px;
+}
+
+.lecturer-section h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:80px;
+
+    height:4px;
+
+    background:#d62828;
+
+    margin:15px auto;
+
+    border-radius:20px;
+}
+
+.lecturer-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+}
+
+.lecturer-card{
+
+    width:320px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-top:5px solid #2d63ff;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.lecturer-card:hover{
+
+    transform:translateY(-10px);
+}
+
+.lecturer-card i{
+
+    font-size:60px;
+
+    color:#2d63ff;
+
+    margin-bottom:20px;
+}
+
+.lecturer-card h3{
+
+    color:#143b6d;
+
+    margin-bottom:10px;
+}
+
+.lecturer-card p{
+
+    color:#666;
+
+    margin-bottom:20px;
+}
+
+.lecturer-card a{
+
+    display:inline-block;
+
+    background:#2d63ff;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 25px;
+
+    border-radius:10px;
+
+    transition:0.3s;
+}
+
+.lecturer-card a:hover{
+
+    background:#d62828;
+}
+
+/* FOOTER */
+
+.footer{
+
+    background:#102c54;
+
+    padding:25px 50px;
+
+    margin-top:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+}
+
+.footer-left p{
+
+    color:white;
+}
+
+.footer-right{
+
+    display:flex;
+
+    gap:25px;
+}
+
+.footer-right a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.footer-right a:hover{
+
+    color:#ff4d4d;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width:768px){
+
+    /* HEADER */
+
+    .top-header{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:15px;
+    }
+
+    .logo{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:8px;
+
+        margin-bottom:15px;
+    }
+
+    .logo img{
+
+        width:50px;
+
+        height:50px;
+    }
+
+    .logo span{
+
+        font-size:16px;
+    }
+
+    .navbar{
+
+        width:100%;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:10px;
+    }
+
+    .navbar a{
+
+        font-size:13px;
+    }
+
+    /* BANNER */
+
+    .contact-banner{
+
+        padding:70px 20px;
+    }
+
+    .contact-banner h1{
+
+        font-size:34px;
+    }
+
+    .contact-banner p{
+
+        font-size:15px;
+
+        line-height:1.6;
+    }
+
+    /* SECTION TITLE */
+
+    .contact-section h2,
+    .lecturer-section h2{
+
+        font-size:28px;
+
+        margin-bottom:30px;
+    }
+
+    /* PROFILE CARD */
+
+    .profile-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:25px;
+
+        gap:25px;
+    }
+
+    /* reverse class disable on mobile */
+
+    .reverse{
+
+        flex-direction:column;
+    }
+
+    .profile-image img{
+
+        width:200px;
+
+        height:240px;
+    }
+
+    .profile-info h3{
+
+        font-size:24px;
+    }
+
+    .profile-info p{
+
+        font-size:15px;
+
+        line-height:1.7;
+    }
+
+    /* CONTACT BUTTONS */
+
+    .contact-links{
+
+        justify-content:center;
+
+        gap:10px;
+    }
+
+    .contact-links a{
+
+        padding:10px 18px;
+
+        font-size:14px;
+    }
+
+    /* LECTURER */
+
+    .lecturer-container{
+
+        gap:20px;
+    }
+
+    .lecturer-card{
+
+        width:100%;
+
+        max-width:330px;
+    }
+
+    .lecturer-card i{
+
+        font-size:50px;
+    }
+
+    .lecturer-card h3{
+
+        font-size:22px;
+    }
+
+    /* FOOTER */
+
+    .footer{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:15px;
+
+        padding:20px;
+    }
+
+    .footer-left p{
+
+        font-size:14px;
+    }
+
+    .footer-right{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:15px;
+    }
+
+}
